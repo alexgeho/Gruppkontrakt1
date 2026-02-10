@@ -110,3 +110,19 @@ button:focus-visible {
   height: 40px;
   background: limegreen;
 }
+
+
+/* ROOM 4 */
+
+.room {
+  width: 300px;
+  height: 200px;
+  border: 2px dashed gray;
+  display: flex;
+}
+
+.box {
+  width: 40px;
+  height: 40px;
+  background: limegreen;
+}
