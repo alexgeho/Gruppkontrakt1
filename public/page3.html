@@ -8,37 +8,16 @@
 </head>
 
 <body>
-    <h2>You again?</h2>
-    <p>Chose correct answer?</p>
+    <h3>Center the box using Flexbox</h3>
 
-    <form id="quizForm">
+    <div class="room">
+        <div class="box"></div>
+    </div>
 
-        <label>
-            <input type="radio" name="answer" value="a">
-            Answer A
-        </label> <br>
+    <input id="answer" placeholder="justify-content: center">
+    <button id="check">Check</button>
 
-        <label>
-            <input type="radio" name="answer" value="b">
-            Answer B
-        </label> <br>
-
-        <label>
-            <input type="radio" name="answer" value="c">
-            Answer C
-        </label> <br>
-
-
-        <label>
-            <input type="radio" name="answer" value="d">
-            Answer D
-        </label> <br>
-
-        <a href="/page4.html">
-            <button type="button">enter level 4</button>
-        </a>
-
-    </form>
+    <script type="module" src="/src/flex.ts"></script>
 </body>
 
 </html>
