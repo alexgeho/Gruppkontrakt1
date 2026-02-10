@@ -1,13 +1,18 @@
 import './style.css'
-
-import { setupCounter } from './counter.ts'
-
+import { setupCounter } from './counter'
 
 const button = document.querySelector<HTMLButtonElement>('#counter')!
+const door = document.querySelector('.door') as HTMLElement
 
-setupCounter(button, onFive)
+const doorSound = new Audio('/door-open.wav')
 
-function onFive() {
-  window.location.href = '/page2.html'
-}
+setupCounter(button, () => {
+  doorSound.currentTime = 0
+  doorSound.play()
 
+  door.classList.add('open')
+
+  setTimeout(() => {
+    window.location.href = '/page2.html'
+  }, 900)
+})
